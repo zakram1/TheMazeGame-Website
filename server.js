@@ -19,6 +19,9 @@ connection.once('open', () => {
     console.log('MongoDB database connection established successfully');
 });
 
+const levelRouter = require('./routes/levels');
+app.use('/', levelRouter);
+
 if (process.env.NODE_ENV === "production") {
     app.use(express.static(path.join(__dirname, "/client/build")));
   
@@ -26,8 +29,5 @@ if (process.env.NODE_ENV === "production") {
       res.sendFile(path.join(__dirname, "client", "build", "index.html"));
     });
   }
-
-const levelRouter = require('./routes/levels');
-app.use('/', levelRouter);
 
 app.listen(port, () => console.log(`Server started on port ${port}`));
