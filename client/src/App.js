@@ -7,6 +7,7 @@ import LevelTwo from './pages/leveltwo.js';
 import LevelThree from './pages/levelthree.js';
 import LevelFour from './pages/levelfour.js';
 import LevelFive from './pages/levelfive.js';
+import Footer from './components/footer.js';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/levelfour" element={<LevelFour />} />
         <Route path="/levelfive" element={<LevelFive />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

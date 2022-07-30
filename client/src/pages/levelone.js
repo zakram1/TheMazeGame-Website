@@ -29,7 +29,7 @@ function LevelOne () {
   }
 
   return (
-    <div className='container mx-auto mt-2 bg-[#ff8c00] rounded-lg'>
+    <div className='container mx-auto mt-2 mb-20 bg-[#ff8c00] rounded-lg'>
       <div className='flex justify-around text-xl bg-[#FFD580] font-bold rounded-lg'>
         <p>Time</p>
         <p>Moves</p>
