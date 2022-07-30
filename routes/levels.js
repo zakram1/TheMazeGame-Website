@@ -5,31 +5,31 @@ const LevelThree = require('../models/levelthree.model');
 const LevelFour = require('../models/levelfour.model');
 const LevelFive = require('../models/levelfive.model');
 
-router.route('/').get((req, res) => {
+router.route('/leveloneapi').get((req, res) => {
     LevelOne.find().sort({time: 1}).limit(10)
         .then(levels => res.json(levels))
         .catch(err => res.status(400).json('Error: ' + err));
 });
 
-router.route('/leveltwo').get((req, res) => {
+router.route('/leveltwoapi').get((req, res) => {
     LevelTwo.find().sort({time: 1}).limit(10)
         .then(levels => res.json(levels))
         .catch(err => res.status(400).json('Error: ' + err));
 });
 
-router.route('/levelthree').get((req, res) => {
+router.route('/levelthreeapi').get((req, res) => {
     LevelThree.find().sort({time: 1}).limit(10)
         .then(levels => res.json(levels))
         .catch(err => res.status(400).json('Error: ' + err));
 });
 
-router.route('/levelfour').get((req, res) => {
+router.route('/levelfourapi').get((req, res) => {
     LevelFour.find().sort({time: 1}).limit(10)
         .then(levels => res.json(levels))
         .catch(err => res.status(400).json('Error: ' + err));
 });
 
-router.route('/levelfive').get((req, res) => {
+router.route('/levelfiveapi').get((req, res) => {
     LevelFive.find().sort({time: 1}).limit(10)
         .then(levels => res.json(levels))
         .catch(err => res.status(400).json('Error: ' + err));

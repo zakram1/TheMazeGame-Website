@@ -7,7 +7,7 @@ function LevelFour () {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios('https://maze-game-site.herokuapp.com/levelfour')
+    axios('/levelfourapi')
       .then(res => {
         setData(res.data);
       })

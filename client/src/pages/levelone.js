@@ -7,7 +7,7 @@ function LevelOne () {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios('https://maze-game-site.herokuapp.com/')
+    axios('/leveloneapi')
       .then(res => {
         setData(res.data);
       })
