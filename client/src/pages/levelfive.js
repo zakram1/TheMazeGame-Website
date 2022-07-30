@@ -7,7 +7,7 @@ function LevelFive () {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios('http://localhost:5000/levelfive')
+    axios('/levelfive')
       .then(res => {
         setData(res.data);
       })
