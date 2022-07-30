@@ -5,3 +5,7 @@ This is a website for The Maze Game. It displays a leaderboard showing the top 1
 ## Website
 
 https://maze-game-site.herokuapp.com/
+
+### Technologies Used
+
+React, Express, Node, MongoDB, Next.js, Pusher, and Tailwind CSS
