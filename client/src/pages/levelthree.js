@@ -7,7 +7,7 @@ function LevelThree () {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios('/levelthree')
+    axios('https://maze-game-site.herokuapp.com/levelthree')
       .then(res => {
         setData(res.data);
       })
