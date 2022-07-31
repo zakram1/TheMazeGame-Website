@@ -8,4 +8,4 @@ https://maze-game-site.herokuapp.com/
 
 ### Technologies Used
 
-React, Express, Node, MongoDB, Next.js, Pusher, and Tailwind CSS
+React, Node, Express, MongoDB, and Tailwind CSS
